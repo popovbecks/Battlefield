@@ -129,7 +129,7 @@ var controller = {
 		if(location) {
 			this.guesses++;
 			var hit = model.fire(location);
-			if(hit && model.shipSunk === model.numShips) {
+			if(hit && model.shipsSunk === model.numShips) {
 				view.displayMessage ("Ты потопил все мои корабли с " + this.guesses + "выстрелов");
 			}
 		}
